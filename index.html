@@ -53,13 +53,44 @@
       }
       .btn {
         display: inline-block;
-        margin-top: 12px;
+        margin: 5px; /* Tambah margin dikit biar gak nempel */
         padding: 10px 18px;
         border-radius: 8px;
         background: white;
         color: #16a34a;
         text-decoration: none;
         font-weight: bold;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background: #f0f0f0;
+        transform: scale(1.05);
+      }
+      
+      /* TAMBAHAN STYLE UNTUK RESUME */
+      .btn-outline {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+      .resume-item {
+        margin-bottom: 15px;
+        border-left: 3px solid #22c55e;
+        padding-left: 15px;
+      }
+      .resume-item h4 {
+        color: #f8fafc;
+        margin-bottom: 2px;
+      }
+      .resume-item span {
+        color: #22c55e;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+      .resume-item p {
+        font-size: 0.95em;
+        margin-top: 5px;
+        color: #94a3b8;
       }
 
       .container {
@@ -163,7 +194,7 @@
   <body>
     <nav>
       <a href="#about">Tentang</a>
-      <a href="#skill">Skill</a>
+      <a href="#resume">Resume</a> <a href="#skill">Skill</a>
       <a href="#project">Project</a>
       <a href="#design">Design</a>
       <a href="#contact">Kontak</a>
@@ -173,8 +204,9 @@
       <img src="foto.JPG" class="profile" />
       <h1>Purwo Widodo</h1>
       <p>Web Developer</p>
-      <p>📞 089526941360 | 📧 widodopurwo@email.com</p>
+      <p>📞 089526941360 | 📧 widodopurwo0712@gmail.com</p>
       <a href="https://wa.me/6289526941360" class="btn">Hire Me</a>
+      <a href="https://bit.ly/3Qw0IYW" target="_blank" class="btn btn-outline">Download Resume</a>
     </header>
 
     <div class="container">
@@ -183,8 +215,38 @@
         <p>
           Mahasiswa Teknologi Informasi semester 4 yang fokus pada pengembangan
           web. Berpengalaman membangun sistem berbasis PHP & MySQL dengan fitur
-          transaksi, konfirmasi pembayaran, dan generate invoice otomatis.
+          transaksi, konfirmasi pembayaran, dan generate invoice otomatis. Memiliki sertifikasi resmi BNSP sebagai Junior Network Administrator.
         </p>
+      </div>
+
+      <div class="card" id="resume">
+        <h2>Pengalaman & Pendidikan</h2>
+        
+        <h3 style="color: #e2e8f0; margin: 15px 0 10px 0;">Pendidikan</h3>
+        <div class="resume-item">
+          <h4>Universitas Bina Sarana Informatika</h4>
+          <span>2024 - Sekarang</span>
+          <p>S1 Teknologi Informasi - Semester 4 (IPK Aktif)</p>
+        </div>
+        <div class="resume-item">
+          <h4>SMK Muhammadiyah Belik, Pemalang</h4>
+          <span>Lulus 2016</span>
+          <p>Teknik Kendaraan Ringan</p>
+        </div>
+
+        <h3 style="color: #e2e8f0; margin: 20px 0 10px 0;">Sertifikasi</h3>
+        <div class="resume-item">
+          <h4>Junior Network Administrator</h4>
+          <span>BNSP Indonesia (2025)</span>
+          <p>Sertifikasi kompetensi dalam mengelola jaringan komputer, konfigurasi perangkat, dan keamanan jaringan dasar.</p>
+        </div>
+
+        <h3 style="color: #e2e8f0; margin: 20px 0 10px 0;">Pengalaman Profesional</h3>
+        <div class="resume-item">
+          <h4>Driver Forklift / Warehouse Operator</h4>
+          <span>8 Tahun Pengalaman Kerja</span>
+          <p>Bekerja di berbagai perusahaan manufaktur besar (PT Nidec, PT Hyundai Glovis) dengan tingkat kedisiplinan dan tanggung jawab tinggi.</p>
+        </div>
       </div>
 
       <div class="card" id="skill">
@@ -195,10 +257,12 @@
         <div class="bar"><div class="fill" style="width: 85%"></div></div>
         <p>JavaScript</p>
         <div class="bar"><div class="fill" style="width: 75%"></div></div>
-        <p>PHP</p>
+        <p>PHP (Native)</p>
         <div class="bar"><div class="fill" style="width: 80%"></div></div>
         <p>MySQL</p>
         <div class="bar"><div class="fill" style="width: 80%"></div></div>
+        <p>Networking (Mikrotik)</p>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
       </div>
 
       <div class="card" id="project">
@@ -261,7 +325,8 @@
       <div class="card" id="contact">
         <h2>Kontak</h2>
         <p>WhatsApp: 089526941360</p>
-        <p>LinkedIn: Purwo Widodo</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/purwowidodo" style="color: white;">Purwo Widodo</a></p>
+        <p>GitHub: <a href="https://github.com/widodopurwo0712-spec" style="color: white;">widodopurwo0712-spec</a></p>
       </div>
     </div>
 
